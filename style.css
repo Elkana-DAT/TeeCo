@@ -9,9 +9,9 @@
 }
 
 .nav{
-    position:fixed;
+    position: fixed;
+    z-index: 222;
     width: 100%;
-   z-index: 222;
     height: 70px;
    display: flex;
    align-items: center;
@@ -142,7 +142,8 @@ z-index: 1;
     align-items: center;
     padding: 0px;
     position: relative;
-    background: var(--white)
+    background: var(--white);
+   
   }
   /* Fading animation */
   .fade {
@@ -154,6 +155,7 @@ z-index: 1;
     max-width: 600px;
     max-height: 300px;
     padding: 0px;
+    
   }
   .dot {
     height: 15px;
