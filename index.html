@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+<!-------Font Awesome Libraries-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- GSAP from CDN -->
+  <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+    <title>teeco/dressupcool</title>
+  </head>
+  <body>
+    <script>
+      const toggle = () => {
+        document.getElementById("nav").classList.toggle("navactive");
+      };
+        </script>
+    <div class="container">
+      <!----Page Layout ---->
+      <div class="structure">
+        <header>Header</header>
+        <div class="nav">
+          <div class="brand">
+            <h1>TeeCo</h1>
+          </div>
+          <span class="fas fa-bars" id="menuIcon" onclick="toggle()"></span>
+          <div class="navbar" id="nav">
+            <ul>
+              <li><span class="fas fa-home" id="headIcon"></span>
+                <a href="index.html">
+                Home
+              </a></li>
+              <li><span class="fas fa-shirt" id="headIcon"></span><a href="#">Shop
+              </a></li>
+              <li><span class="fas fa-user-circle" id="headIcon"></span><a href="#">About
+              </a></li>
+              <li><span class="fas fa-shopping-cart" id="headIcon"></span><sup><a href="#">0
+              </a></sup></li>
+            </ul>
+          </div>
+        </div>
+   
+        <main>
+          <!-- Slider main container -->
+          <div class="desktop-1">
+            <div class="rectangle-10">
+        
+              <!--slide show section-->
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                 
+                  <img src="images/F11.jpg" alt="ghg" class="respb slid" width="100" height="600">
+                </div>
+                <div class="mySlides fade">
+                  <img src="images/F7.jpg" alt="ghg" class="respb slid" width="1000" height="600"> 
+                </div>
+                <div class="mySlides fade">       
+                  <img src="images/F8.jpg" alt="hvc" class="respb slid" width="1000" height="600">
+                </div>
+                <div class="mySlides fade">  
+                  <img src="images/F7.jpg" alt="hvc" class="respb slid" width="1000" height="600">
+                </div>
+              </div>
+        
+              
+              <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+        
+        </main>
+        <div id="sidebar">Sidebar</div>
+        <div id="content1">Content1</div>
+        <div id="content2">Content2</div>
+        <div id="content3">Content3</div>
+        <div id="content4">Content4</div>
+        <div id="content5" class="content5">
+          <div id="sub1">SUB1</div>
+          <div id="sub2">SUB2</div>
+          <div id="sub3">SUB3</div>
+          <div id="sub4">SUB4</div>
+          <div id="sub5">SUB5</div>
+        </div>
+        <div id="footer">Footer</div>
+      </div>
+    </div>
+
+    <!----Slider scripts---->
+    <script src="slider.js"></script>
+  
+  </body>
+</html>
