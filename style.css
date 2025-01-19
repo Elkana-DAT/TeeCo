@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+}
+
+.nav{
+    position: relative;
+    width: 100%;
+    height: 70px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+}
+.brand{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+    justify-content: space-evenly;
+}
+.brand h1{
+    margin-left: 5%;
+}
+.navbar{
+    position: relative;
+    width: 70%;
+    padding: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*----Navbar on Bigger Screen size---*/
+@media only screen and (min-width: 950px){
+.navbar{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-shopping-cart{
+    margin-left: 200px;
+}
+}
+ul{
+    width: 100%;
+}
+ul li{
+    display: inline-block;
+    margin-left: 3%;
+    transition: all 0.5s ease;
+}
+ul li a:hover{
+    background: white;
+    color: black;
+
+}
+ul li #headIcon{
+    font-size: 22px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 18px;
+}
+#menuIcon{
+    display: none;
+}
+/*----Phone Screen----*/
+@media (max-width: 768px) {
+    .nav{
+        height: 40px;
+    }
+    .navbar{
+        position: relative;
+        display: block;
+        width: 60%;
+        display: none;
+    }
+    .navbar.navactive{
+        display: inline;
+    }
+    .navbar ul{
+        position: absolute;
+width: 100%;
+height: 100vh;
+background-color: rgba(0, 0, 0, 0.377);
+z-index: 1;
+
+    padding: 5%;
+    }
+    .navbar ul li {
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+        height: 40px;
+        text-align: left;
+        position: relative;
+        top: 50px;
+        padding: 2%;
+    }
+    ul li #headIcon{
+        display: inline-block;
+        font-size: 33px;
+    }
+    ul li:hover{
+        background: rgb(255, 255, 255);
+        color: black;
+    }
+    ul li a{
+        margin-left: 40px;
+        font-family: 600;
+    }
+    #menuIcon{
+        display: inline;
+        position: fixed;
+       margin-left: 88%;
+       float: right;
+        font-size: 25px;
+        padding: 0.5% 1%;
+        border-radius: 4px;
+        cursor: pointer;
+        z-index: 222;
+        border: 1px solid white;
+}
+}
+
+
+/*-----Slider Section----*/   
+.slideshow-container {
+    align-items: center;
+    padding: 0px;
+    position: relative;
+    background: var(--white)
+  }
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  .respb {
+    width: 100%;
+    max-width: 600px;
+    max-height: 300px;
+    padding: 0px;
+  }
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background-color: #949494;
+    transition: background-color 5s ease;
+}
+  .okay {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 3s ease;
+    background-color: blue;
+}
+ @keyframes fade {
+    from {
+      opacity: .4
+    }
+  
+    to {
+      opacity: 1
+    }
+  }
+
+
+
+/*------Page Layout-----*/
+.structure{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 
+    0.1fr .5fr 3fr 2fr 5fr 0.8fr;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "sidebar main main content4"
+    "sidebar content1 content2 content3"
+    "sidebar content5 content5 content5"
+    "footer footer footer footer"
+    ;
+    grid-gap: 0.2rem;
+}
+header{
+    background-color: slateblue;
+    grid-area: header;
+}
+.nav{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    grid-area: nav;
+}
+/*----Slider container---*/
+main{
+    background-color: rgb(255, 255, 255);
+grid-area: main;
+align-items: center;
+justify-content: center;
+}
+/*----Slider container on Bigger Screen size---*/
+@media only screen and (min-width: 950px){
+    main{
+        padding-left: 50px;
+    }
+}
+/*----Slider container On---*/
+@media only screen and (max-width: 600px){
+    main{
+        padding:10px
+    }
+}
+#sidebar{
+    background-color: blue;
+    grid-area: sidebar;
+}
+#content1{
+    background-color: salmon;
+    grid-area: content1;
+}
+#content2{
+    background-color: gold;
+    grid-area: content2;
+}
+#content3{
+    background-color: hotpink;
+    grid-area: content3;
+}
+#content4{
+    background-color: rgb(0, 204, 61);
+    grid-area: content4;
+}
+#content5{
+    background-color: rgb(255, 0, 255);
+    grid-area: content5
+}
+.content5{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2.4fr 2.3fr;
+    grid-template-areas: 
+    "sub1 sub2 sub5"
+    "sub3 sub4 sub5";
+    grid-gap: 0.15em;
+}
+
+
+
+ /*---structure of Content5----*/
+#sub1{
+    background-color: rgb(255, 187, 0);
+    grid-area: sub1;
+}
+#sub2{
+    background-color: rgb(0, 139, 173);
+    grid-area: sub2;
+}
+#sub3{
+    background-color: rgb(255, 238, 0);
+    grid-area: sub3;
+}
+#sub4{
+    background-color: rgb(3, 3, 3);
+    grid-area: sub4;
+}
+#sub5{
+    background-color: rgb(0, 47, 255);
+    grid-area: sub5;
+}
+#footer{
+    background-color: lawngreen;
+    grid-area: footer;
+}
+@media only screen and (max-width: 550px){
+.structure{
+    grid-template-columns:1fr;
+    grid-template-rows: 0.05fr .1fr 0.2fr .2fr .2fr .2fr .2fr .2fr .2fr .1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+     "main"
+    "sidebar"
+    "content4"
+    "content1"
+    "content2"
+    "content3"
+    "content5"
+    "footer";
+}
+}
