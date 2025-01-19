@@ -11,6 +11,7 @@
 .nav{
     position: relative;
     width: 100%;
+   z-index: 222;
     height: 70px;
    display: flex;
    align-items: center;
