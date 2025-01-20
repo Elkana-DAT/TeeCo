@@ -270,7 +270,7 @@ justify-content: center;
   
   @media screen and (max-width: 600px) {
     div.scady {
-      font-size: 10px;
+      font-size: 15px;
     }
     .scada{
         width: 100%;
