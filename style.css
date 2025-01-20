@@ -35,12 +35,18 @@ h5{
     color: white
 }
 .price {
-    color: #ff0000;
-    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-
-
+figcaption{
+    padding-left: 4px;
+}
+s{
+    font-size: 13px;
+}
+.fa-star, .fa-star-half{
+    color: rgba(0, 4, 255, 0.774);
+    font-size: 10px;
+}
 
 .navbar{
     position: relative;
@@ -76,15 +82,15 @@ ul li{
     transition: all 0.5s ease;
 }
 ul li a:hover{
-    background: white;
-    color: black;
+    background: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
 
 }
 ul li #headIcon{
     font-size: 22px;
 }
 ul li a{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: 18px;
 }
@@ -220,13 +226,13 @@ z-index: 1;
     grid-gap: 0.2rem;
 }
 header{
-    background-color: rgb(180, 0, 0);
+    background-color: rgb(255, 255, 255);
     grid-area: header;
    
 }
 .nav{
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: rgb(238, 237, 237);
+    color: rgb(0, 0, 0);
     grid-area: nav;
 }
 
@@ -314,7 +320,7 @@ justify-content: center;
     grid-area: sidebar;
 }
 #content1{
-    background-color: rgb(204, 204, 204);
+    background-color: rgba(204, 204, 204, 0.281);
     grid-area: content1;
 }
 /*-----Styling for Container below Slider-----*/
@@ -329,7 +335,7 @@ justify-content: center;
 }
 /*Styling for 1ST Container In Content1--*/
 #content2{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(204, 204, 204, 0.281);
     grid-area: content2;
 }
 .content2{
@@ -361,18 +367,20 @@ justify-content: center;
 }
 
 #cont2in{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(204, 204, 204, 0.281);
     grid-area: cont2in;
 }
 #content3{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(204, 204, 204, 0.281);
     grid-area: content3;
 }
 #cont3in{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(204, 204, 204, 0.281);
     grid-area: cont3in;
 }
-
+figure{
+    background-color: white;
+}
 
 #content4{
     background-color: rgb(0, 204, 61);
