@@ -234,6 +234,54 @@ justify-content: center;
     main{
         padding:10px
     }
+
+    .scada{
+        width: 100%;
+        height: auto;
+            }
+          
+  }
+  .grid-cont {
+    display: inline-flex;
+    gap: 16px;
+    padding: 16px;
+}
+
+.card {
+    padding: 16px;
+    border-radius: 8px;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-weight: bold;
+}
+    
+  
+  /* Style the topnav links */
+  .foota a {
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+    width: 30%;
+  }
+  
+  /* Change color on hover 
+  .foot a:hover {
+    background-color: rgb(255, 255, 255);
+    color: blue;
+  }*/
+        h5{
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    color: white
+}
+.price {
+    color: #ff0000;
+    font-weight: bold;
 }
 
 #sidebar{
