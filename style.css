@@ -28,6 +28,20 @@
 .brand h1{
     margin-left: 5%;
 }
+/*-----Styling he productss content-------*/
+h5{
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    color: white
+}
+.price {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+
+
+
 .navbar{
     position: relative;
     width: 70%;
@@ -194,7 +208,7 @@ z-index: 1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 
-    0.1fr .5fr 3fr 3fr 5fr 0.8fr;
+    0.1fr .3fr 3fr 3fr 5fr 0.8fr;
     grid-template-areas: 
     "header header header header"
     "nav nav nav nav"
@@ -206,8 +220,9 @@ z-index: 1;
     grid-gap: 0.2rem;
 }
 header{
-    background-color: slateblue;
+    background-color: rgb(180, 0, 0);
     grid-area: header;
+   
 }
 .nav{
     background-color: rgb(0, 0, 0);
@@ -218,7 +233,7 @@ header{
 
 /*----Slider container---*/
 main{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(114, 114, 114, 0);
 grid-area: main;
 align-items: center;
 justify-content: center;
@@ -234,7 +249,23 @@ justify-content: center;
     main{
         padding:10px
     }
+}
 
+
+
+
+
+
+@media screen and (min-width: 601px) {
+    div.scady {
+      font-size: 17px;
+    }
+}
+  
+  @media screen and (max-width: 600px) {
+    div.scady {
+      font-size: 10px;
+    }
     .scada{
         width: 100%;
         height: auto;
@@ -274,15 +305,9 @@ justify-content: center;
     background-color: rgb(255, 255, 255);
     color: blue;
   }*/
-        h5{
-    position: absolute;
-    background-color: rgb(255, 0, 0);
-    color: white
-}
-.price {
-    color: #ff0000;
-    font-weight: bold;
-}
+ 
+  
+
 
 #sidebar{
     background-color: blue;
